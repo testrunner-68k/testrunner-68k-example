@@ -15,9 +15,9 @@ matrix:
 
         # Install testrunner-68k
 
-        - add-apt-repository 'deb [trusted=yes] https://testrunner-68k-apt.s3-eu-west-1.amazonaws.com stable main'
-        - apt-get update
-        - apt-get install testrunner-68k
+        - sudo add-apt-repository 'deb [trusted=yes] https://testrunner-68k-apt.s3-eu-west-1.amazonaws.com stable main'
+        - sudo apt-get update
+        - sudo apt-get install testrunner-68k
 
       script:
 
