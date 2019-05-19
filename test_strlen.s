@@ -25,7 +25,7 @@ test_strlen_with_nonempty_string
         moveq   #0,d0
         rts
 
-; Test runner does not yet support relocation - all code must be in the same section
+; Test runner does not yet support relocation - all code and data must be in the same section
 ;        section data,data
 
 empty_string
