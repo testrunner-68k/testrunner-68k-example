@@ -17,7 +17,7 @@ matrix:
 
         - sudo add-apt-repository 'deb [trusted=yes] https://testrunner-68k-apt.s3-eu-west-1.amazonaws.com stable main'
         - sudo apt-get update
-        - sudo apt-get install testrunner-68k
+        - sudo apt-get install -y --allow-unauthenticated testrunner-68k
 
       script:
 
