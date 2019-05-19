@@ -1,0 +1,26 @@
+
+matrix:
+  include:
+
+    ############ Linux test ############################
+
+    - name: Linux test
+
+      os: linux
+      dist: xenial
+
+      language: cpp
+
+      before_install:
+
+        # Install testrunner-68k
+
+        - add-apt-repository 'deb [trusted=yes] https://testrunner-68k-apt.s3-eu-west-1.amazonaws.com stable main'
+        - apt-get update
+        - apt-get install testrunner-68k
+
+      script:
+
+        # Build code & run tests
+
+        - make test
