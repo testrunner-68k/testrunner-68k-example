@@ -1,0 +1,3 @@
+[submodule "external/testrunner-68k-native-library"]
+	path = external/testrunner-68k-native-library
+	url = https://github.com/Kalmalyzer/testrunner-68k-native-library.git
